@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = 'App'>
+      <div className='About'>
+            <h1>Hi I'm Jason Corchado</h1>
+            <p>I'm a Full Stack developer from New York, who is passionate about building webApps. Some language I work with are JavaScript, React, css, and Html. I enjoy learning more about code, and hope to further my knowledge within my Field. I also have learned to use Python and plan on furthering my knowledge with the language.  </p>
+        </div>  
     </div>
+    
   );
 }
 
