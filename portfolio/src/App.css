@@ -1,21 +1,48 @@
 .App {
   text-align: center;
-  background-image: url('./imgs/Untitled design.jpg');
+  /* background-image: url('./imgs/Untitled design.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-top: 2%;
 }
 
 .About {
   margin-top: 3%;
   width:60%;
-  height:25%;
   background-color: hsla(0, 0%, 24%, 0.541);
   font-weight: bold;
   color: white;
   border-radius: 10px;
-  padding: 2%;  
+  padding: 2%;
 }
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: hsla(0, 0%, 24%, 0.541);
+  justify-content: space-evenly;
+  border: 3px solid white;
+  padding: .5%;
+}
+
+.Navbar a {
+  color: ivory;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

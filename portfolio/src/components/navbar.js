@@ -1,13 +1,13 @@
 import React from 'react';
-import Projects from './projects';
-import { NavLink, Link} from 'react-router-dom'
-import Skills from './skills';
-import Contact from './contact';
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
-        <div>
-            
+        <div className='Navbar'>
+            <Link to='/'>Home</Link>
+            <Link to='/skills'>Skills</Link>
+            <Link to='/projects'>Projects</Link>
+            <Link to='/contact'>Contact</Link>
         </div>
     );
 }

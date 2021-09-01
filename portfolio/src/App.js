@@ -1,14 +1,26 @@
 import './App.css';
 import Navbar from './components/navbar';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import About from './components/about';
+import Contact from './components/contact';
+import Projects from './components/projects';
+import Skills from './components/skills';
 
 
 function App() {
   return (
     <div className = 'App'>
-      <div className='About'>
-            <h1>Hi I'm Jason Corchado</h1>
-            <p>I'm a Full Stack developer from New York, who is passionate about building webApps. Some language I work with are JavaScript, React, css, and Html. I enjoy learning more about code, and hope to further my knowledge within my Field. I also have learned to use Python and plan on furthering my knowledge with the language.  </p>
-        </div>  
+      <Router>
+        <Navbar/>
+        <div className="container">
+          <Switch>
+            <Route exact path="/" component={About}/>
+            <Route path="/projects" component={Projects}/>
+            <Route path="/contact" component={ Contact } />
+            <Route path="/skills" component={ Skills } />
+          </Switch>      
+        </div>
+      </Router>
     </div>
     
   );
