@@ -1,13 +1,13 @@
 import React from 'react';
 import Css3 from '../imgs/Icons/Css3.png';
 import Git from '../imgs/Icons/Git.png';
-import HTMLimg from '../imgs/Icons/HTML.png';
+import HTMLimg from '../imgs/Icons/HTML5.png';
 import Java from '../imgs/Icons/Java.png';
 import Javascript from '../imgs/Icons/Javascript.png';
 import PostgreSQL from '../imgs/Icons/Postgresql.png';
 import Python from '../imgs/Icons/Python.png';
-import Reactimg from '../imgs/Icons/React.png';
-import Redux from '../imgs/Icons/Redux.png';
+import Reactimg from '../imgs/Icons/react.png';
+import Redux from '../imgs/Icons/redux.png';
 import Spring from '../imgs/Icons/Spring Framework.png';
 
 

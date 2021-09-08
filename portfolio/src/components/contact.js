@@ -1,5 +1,5 @@
 import React from 'react';
-import github from '../imgs/Icons/icons8-github-384.png';
+import github from '../imgs/Icons/Github.png';
 import linkedin from '../imgs/Icons/icons8-linkedin-480.png';
 import gmail from '../imgs/Icons/icons8-gmail-480.png';
 
