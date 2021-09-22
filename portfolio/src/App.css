@@ -15,27 +15,36 @@
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* overflow-y: hidden; */
+  color: white;
+  font-family: 'Cutive Mono', monospace;
 }
 
 .About {
   margin-top: 3%;
   width:60%;
-  background-color: hsla(0, 0%, 24%, 0.541);
   font-weight: bold;
-  color: white;
   border-radius: 10px;
   padding: 2%;
 }
 
+.About h1{
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+}
+
 .Navbar {
   display: flex;
-  flex-direction: row;
-  background-color: hsla(0, 0%, 24%, 0.541);
-  justify-content: space-evenly;
-  border: 3px solid white;
-  padding: .5%;
-  margin-top: 1%;
+  flex-direction: column;
+  padding: 2%;
+  color: white;
+  align-items: flex-start;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  border: 2px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .Navbar a {
