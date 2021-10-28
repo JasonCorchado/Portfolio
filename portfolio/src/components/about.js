@@ -1,9 +1,13 @@
 import React from 'react';
-import Divider from '../imgs/504-5045315_white-divider-png.png'
+import Divider from '../imgs/504-5045315_white-divider-png.png';
+import { motion } from 'framer-motion';
 
 function About() {
     return(
-        <div className='About'>
+        <motion.div className='About'
+            initial = {{opacity: 0, scale: 1, x:200 }}
+            animate = {{opacity: 1, scale: 1, x: 0, transition: {duration: 1.5}}}
+            exit = {{opacity: 0, scale: 1, x: 200, transition: {duration: 1}}}>
             <h1>Hi I'm Jason Corchado</h1>
             <p>I'm a Full Stack developer from New York. I'm passionate about this field and enjoy learning as well as growing within this field. just like many New Yorkers I'm determined to be the best version of myself every day, and I think that shows in my work ethic as well as my code.</p>
             <img src={Divider} alt='divider' />
@@ -11,7 +15,7 @@ function About() {
             <img src={Divider} alt='divider' />
             <p>On that note feel free to contact me if you would like to work with me or have any questions about what I can offer. </p> 
             
-        </div>
+        </motion.div>
     );
 };
 

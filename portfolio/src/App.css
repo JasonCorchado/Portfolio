@@ -1,6 +1,8 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
   border: 0;
 }
@@ -15,12 +17,12 @@
   display: flex;
   flex-direction: column;
   color: white;
-  font-family: 'Cutive Mono', monospace;
+  font-family: "Cutive Mono", monospace;
 }
 
 .About {
   margin-top: 3%;
-  width:60%;
+  width: 60%;
   font-weight: bold;
   border-radius: 10px;
   padding: 2%;
@@ -28,11 +30,12 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  height:70vh;
+  height: 80vh;
+  max-width: 70ch;
 }
 
-.About h1{
-  font-family: 'Amatic SC', cursive;
+.About h1 {
+  font-family: "Amatic SC", cursive;
   font-size: 4rem;
 }
 
@@ -47,22 +50,22 @@
   padding: 2%;
   color: white;
   align-items: flex-start;
-  font-family: 'Amatic SC', cursive;
-  font-size: 2rem;
+  font-family: "Amatic SC", cursive;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   border: 2px solid white;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  width:15vw;
+  width: clamp(5rem ,15vw, 15rem);
 }
 
 .Navbar img {
-  width:100%;
+  width: 100%;
 }
 
 .Navbar a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
@@ -70,12 +73,23 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .Contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
+  width:100%;
+}
+
+.wrapperC {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  left:0;
+}
+
+.wrapperC a img {
+  width: 100%;
 }
 
 .Skills {
@@ -87,61 +101,59 @@
   height: 80vh;
 }
 
-.Row1{
+.Row1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.Row1 img{
-  width:30%;
-}
-
-.Row1 div{
-  display: flex;
-  flex-direction: row;
-  font-weight: bolder;
-  align-items: center;
-  width:50%;
-  
-}
-
-.Row2{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.Row2 img{
+.Row1 img {
   width: 30%;
 }
 
-.Row2 div{
+.Row1 div {
   display: flex;
   flex-direction: row;
   font-weight: bolder;
-  justify-content:flex-end;
   align-items: center;
-  width:50%;
+  width: 50%;
 }
 
-.Contact{
+.Row2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Row2 img {
+  width: 30%;
+}
+
+.Row2 div {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.Contact {
   display: flex;
   max-width: 100%;
   height: 80vh;
   align-items: center;
 }
 
-.Contact img{
-  width:15%;
+.Contact img {
+  width: 15%;
 }
 
-.Contact div{
+.Contact div {
   display: flex;
   flex-direction: row;
   align-items: center;
   font-weight: bold;
 }
-
