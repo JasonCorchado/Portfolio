@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Jc from "../imgs/Icons/JC.gif";
+import Jc from "../imgs/JC.png";
 import github from "../imgs/Icons/Github.png";
 import linkedin from "../imgs/Icons/icons8-linkedin-480.png";
 import gmail from "../imgs/Icons/icons8-gmail-480.png";

@@ -49,15 +49,16 @@
   flex-direction: column;
   padding: 2%;
   color: white;
+  background-color: olive;
   align-items: flex-start;
   font-family: "Amatic SC", cursive;
   font-size: clamp(1.5rem, 3vw, 3rem);
-  border: 2px solid white;
+  /* border: 2px solid white; */
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  width: clamp(5rem ,15vw, 15rem);
+  width: clamp(5rem, 15vw, 15rem);
 }
 
 .Navbar img {
@@ -78,14 +79,14 @@
 
 .Contact {
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .wrapperC {
   position: absolute;
   bottom: 0;
-  right:0;
-  left:0;
+  right: 0;
+  left: 0;
 }
 
 .wrapperC a img {
