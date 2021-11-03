@@ -9,9 +9,9 @@ function Navbar() {
   return (
     <div className="Navbar">
       <img src={Jc} alt="gif logo" />
-      <Link to="/">Home</Link>
-      <Link to="/skills">Skills</Link>
-      <Link to="/projects">Projects</Link>
+      <Link to="/" className='Tabs'>Home</Link>
+      <Link to="/skills" className='Tabs'>Skills</Link>
+      <Link to="/projects" className='Tabs'>Projects</Link>
       <div className="Contact">
         <div className="wrapperC">
           <a
